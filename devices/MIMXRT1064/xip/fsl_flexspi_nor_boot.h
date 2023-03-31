@@ -10,9 +10,11 @@
 
 #include <stdint.h>
 #include "fsl_common.h"
+#ifndef __rtems__
 #ifndef BOARD_FLASH_SIZE
 #include "board.h"
 #endif
+#endif /* __rtems__ */
 
 /*! @name Driver version */
 /*@{*/
@@ -103,11 +105,13 @@ typedef struct _boot_data_
 } BOOT_DATA_T;
 
 #define FLASH_BASE FlexSPI2_AMBA_BASE
+#ifndef __rtems__
 #if defined(BOARD_FLASH_SIZE)
 #define FLASH_SIZE BOARD_FLASH_SIZE
 #else
 #error "Please define macro BOARD_FLASH_SIZE"
 #endif
+#endif /* __rtems__ */
 #define PLUGIN_FLAG (uint32_t)0
 
 /* External Variables */
