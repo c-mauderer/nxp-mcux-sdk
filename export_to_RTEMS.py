@@ -4,9 +4,8 @@
 This script is a ugly hack and it might doesn't work with newer mcux_sdk
 versions.
 
-Provide a number of the cmake files in `devices/MIMXRT*/all_lib_device_*.cmake`
-as parameter to this script. The file format is expected to be quite fixed.
-Don't give anything else to the script. It won't work.
+Provide a number of the MCUX_DEVICE values like found in all_devices.cmake to
+this script.
 """
 
 import argparse
