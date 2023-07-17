@@ -234,7 +234,7 @@ if __name__ == "__main__":
                 "build-type": "objects",
                 "cflags": [],
                 "copyrights":
-                  ["Copyright (C) 2023 embedded brains GmbH (http://www.embedded-brains.de)"],
+                  ["Copyright (C) 2023 embedded brains GmbH & Co. KG"],
                 "cppflags": [],
                 "cxxflags": [],
                 "ldflags": [],
